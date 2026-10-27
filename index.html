@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Auditory EEG Bench (AEB)</title>
+<style>body{font:17px/1.65 Georgia,serif;max-width:820px;margin:56px auto;padding:0 22px;color:#1c2333}
+h1{font-size:34px;line-height:1.15;margin-bottom:8px}h2{font-size:21px;margin-top:32px}
+a{color:#1565c0}.muted{color:#5a6478}.card{border:1px solid #e4e8ee;border-radius:12px;padding:16px 20px;margin:14px 0}
+code{background:#eef1f5;padding:1px 5px;border-radius:4px}</style></head>
+<body>
+<h1>Auditory EEG Bench (AEB)</h1>
+<p class="muted">A fixed benchmark for naturalistic auditory EEG decoding, not an encoder paper.
+v0.1: six-dataset cache, listener-aware splits, leakage audit, frozen-probe and supervised reference results.</p>
+<div class="card"><b>Start here</b><br>
+<a href="leaderboard/">Leaderboard</a> ·
+<a href="README.md">README</a> ·
+<a href="DATASHEET.md">Datasheet</a> ·
+<a href="DATA_LICENSES.md">Data licenses</a> ·
+<a href="REPRODUCIBILITY.md">Reproducibility</a> ·
+<a href="ETHICS.md">Ethics</a></div>
+<h2>Scope</h2>
+<p>Target task: NMED-T 10-way, per-subject trial-wise 50/50. Training cache: six datasets,
+19 channels, 200 Hz, 8-s windows (69,108 windows, 153.6 h). Raw EEG, audio and checkpoints are
+not redistributed. Random-row and block splits are controls; listener-held-out and
+leave-one-dataset-out are the stress tests.</p>
+<h2>v0.1 status</h2>
+<p>Reference frozen-probe results: band-power .840, six-dataset encoder .607, BIOT .381,
+LaBraM .358, CBraMod .250. Supervised baselines are fixed-budget reference points.
+The unified 3-seed fine-tune grid, tuned supervised budget and full LODO leaderboard are
+release blockers before v1.0.</p>
+<p class="muted">No raw EEG, audio, or model checkpoints are published in this repository.</p>
+</body></html>
