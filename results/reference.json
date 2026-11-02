@@ -17,6 +17,13 @@
       "centroid": 0.67
     },
     {
+      "model": "bandpower_19x5",
+      "family": "feature",
+      "feature_dim": 95,
+      "logistic": 0.776,
+      "centroid": 0.485
+    },
+    {
       "model": "encoder_6datasets",
       "family": "domain_encoder",
       "params": 1141408,

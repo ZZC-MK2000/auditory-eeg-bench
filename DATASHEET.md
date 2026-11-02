@@ -29,7 +29,8 @@ training half of each trial-wise split.
 - SparrKULee: BioSemi64 order → 19 channels, resampled 120 → 200 Hz. The channel order is
   an assumption; it is recorded in `configs/datasets.yaml` and the cache manifest.
 - Inputs are per-window, per-channel z-scored and clipped to ±10 for the reference models.
-- No raw EEG, audio or checkpoints are included in this repository.
+- No raw EEG, stimulus audio or checkpoints are included in this repository; the demo
+  contains generated clips and stimulus spectrograms only.
 
 ## Splits
 

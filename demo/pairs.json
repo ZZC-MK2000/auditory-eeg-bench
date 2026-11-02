@@ -1,0 +1,97 @@
+{
+  "protocol": {
+    "n_pairs": 14,
+    "generator": "frozen MusicGen-small, 400 tokens, temperature 0.9, fixed seed",
+    "source": "results/library_b/listen (Auditory-EEG workspace)",
+    "spectrogram": "original and reconstructed tiles share time axis 0-8 s, frequency axis 0-8 kHz, and colour scale",
+    "copyright": "the heard recordings are copyrighted; only spectrograms are shown, and no stimulus waveform is redistributed",
+    "clap": "cosine of the generated clip to its own heard stimulus (own) versus the other 13 stimuli (others)",
+    "caveat": "illustrative only; no MOS was collected; the same-prompt control shows the CLAP margin is genre-level, not song-level"
+  },
+  "rows": [
+    {
+      "row": 56,
+      "gen_file": "genB__row56__p9.wav",
+      "cos_own": 0.8106880187988281,
+      "cos_others": 0.43589797616004944
+    },
+    {
+      "row": 78,
+      "gen_file": "genB__row78__p6.wav",
+      "cos_own": 0.5737757086753845,
+      "cos_others": 0.5808850526809692
+    },
+    {
+      "row": 322,
+      "gen_file": "genB__row322__p0.wav",
+      "cos_own": 0.6125487685203552,
+      "cos_others": 0.5959948897361755
+    },
+    {
+      "row": 519,
+      "gen_file": "genB__row519__p0.wav",
+      "cos_own": 0.5582022666931152,
+      "cos_others": 0.4872613549232483
+    },
+    {
+      "row": 749,
+      "gen_file": "genB__row749__p0.wav",
+      "cos_own": 0.672087550163269,
+      "cos_others": 0.5975364446640015
+    },
+    {
+      "row": 795,
+      "gen_file": "genB__row795__p7.wav",
+      "cos_own": 0.804039478302002,
+      "cos_others": 0.6134204268455505
+    },
+    {
+      "row": 1083,
+      "gen_file": "genB__row1083__p7.wav",
+      "cos_own": 0.653516948223114,
+      "cos_others": 0.43374374508857727
+    },
+    {
+      "row": 1138,
+      "gen_file": "genB__row1138__p2.wav",
+      "cos_own": 0.4840225577354431,
+      "cos_others": 0.41127488017082214
+    },
+    {
+      "row": 1150,
+      "gen_file": "genB__row1150__p7.wav",
+      "cos_own": 0.6427940130233765,
+      "cos_others": 0.5908154845237732
+    },
+    {
+      "row": 23942,
+      "gen_file": "genB__row23942__p6.wav",
+      "cos_own": 0.5889034867286682,
+      "cos_others": 0.48309266567230225
+    },
+    {
+      "row": 24496,
+      "gen_file": "genB__row24496__p6.wav",
+      "cos_own": 0.5404058694839478,
+      "cos_others": 0.5105968713760376
+    },
+    {
+      "row": 24714,
+      "gen_file": "genB__row24714__p0.wav",
+      "cos_own": 0.4454350173473358,
+      "cos_others": 0.3900109827518463
+    },
+    {
+      "row": 25724,
+      "gen_file": "genB__row25724__p11.wav",
+      "cos_own": 0.6255948543548584,
+      "cos_others": 0.39287155866622925
+    },
+    {
+      "row": 25757,
+      "gen_file": "genB__row25757__p0.wav",
+      "cos_own": 0.5125638246536255,
+      "cos_others": 0.5643472075462341
+    }
+  ]
+}

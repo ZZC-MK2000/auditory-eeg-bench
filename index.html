@@ -11,6 +11,7 @@ code{background:#eef1f5;padding:1px 5px;border-radius:4px}</style></head>
 v0.1: six-dataset cache, listener-aware splits, leakage audit, frozen-probe and supervised reference results.</p>
 <div class="card"><b>Start here</b><br>
 <a href="leaderboard/">Leaderboard</a> ·
+<a href="demo/">Demo</a> ·
 <a href="README.md">README</a> ·
 <a href="DATASHEET.md">Datasheet</a> ·
 <a href="DATA_LICENSES.md">Data licenses</a> ·
@@ -18,13 +19,16 @@ v0.1: six-dataset cache, listener-aware splits, leakage audit, frozen-probe and 
 <a href="ETHICS.md">Ethics</a></div>
 <h2>Scope</h2>
 <p>Target task: NMED-T 10-way, per-subject trial-wise 50/50. Training cache: six datasets,
-19 channels, 200 Hz, 8-s windows (69,108 windows, 153.6 h). Raw EEG, audio and checkpoints are
-not redistributed. Random-row and block splits are controls; listener-held-out and
+19 channels, 200 Hz, 8-s windows (69,108 windows, 153.6 h). Raw EEG, stimulus audio and
+checkpoints are not redistributed. Random-row and block splits are controls; listener-held-out and
 leave-one-dataset-out are the stress tests.</p>
 <h2>v0.1 status</h2>
-<p>Reference frozen-probe results: band-power .840, six-dataset encoder .607, BIOT .381,
-LaBraM .358, CBraMod .250. Supervised baselines are fixed-budget reference points.
-The unified 3-seed fine-tune grid, tuned supervised budget and full LODO leaderboard are
-release blockers before v1.0.</p>
-<p class="muted">No raw EEG, audio, or model checkpoints are published in this repository.</p>
+<p>Reference frozen-probe results: six-dataset encoder .607 vs BIOT .381, LaBraM .358 and
+CBraMod .250. The hand-crafted band-power feature baseline is reported only in
+Appendix A of the README, not in the encoder comparison. Supervised baselines are
+fixed-budget reference points. The unified 3-seed fine-tune grid, tuned supervised budget
+and full LODO leaderboard are release blockers before v1.0.</p>
+<p class="muted">A genre-selection reconstruction demo is in <a href="demo/">demo/</a>.
+No raw EEG, stimulus audio, or model checkpoints are published; the demo contains generated
+clips and stimulus spectrograms only.</p>
 </body></html>

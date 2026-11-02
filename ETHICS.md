@@ -14,3 +14,6 @@
   bounds, never cross-subject evidence.
 - **No MOS / no perceptual claim.** The downstream audio demo is illustrative; it is not a
   perceptual quality benchmark.
+- **Demo assets.** The demo publishes generated clips and stimulus spectrograms only; the
+  heard stimulus waveform is not redistributed. Original and reconstructed spectrograms share
+  identical time, frequency, and colour scales for fair comparison.

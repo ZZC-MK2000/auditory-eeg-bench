@@ -14,6 +14,7 @@
 - `manifests/coverage.json` — subjects/windows/hours.
 - `manifests/split_audit.json` — leakage checks.
 - `results/reference.json` — reference leaderboard values and caveats.
+- `demo/pairs.json` — 14 demo pairs and CLAP own/others; `demo/build_demo.py` rebuilds the page.
 
 ## Commands
 
@@ -21,6 +22,7 @@
 python code/build_splits.py                 # regenerate splits from local caches
 python code/audit_splits.py                 # verify leakage properties
 python code/make_leaderboard.py             # rebuild leaderboard/index.html
+python demo/build_demo.py                   # rebuild demo/index.html from demo/pairs.json
 python code/run_probe.py --features F.npz --split splits/nmedt_folds.json
 python code/run_finetune.py --cache CACHE --model eegnet --seeds 0 1 2
 ```
